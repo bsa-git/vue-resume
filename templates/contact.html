@@ -1,0 +1,63 @@
+<!-- Contact section -->
+<section id="contact">
+    <div class="contact-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 contactWrapper">
+                    <!-- Section Title -->
+                    <div class="section-title">
+                        <h2><span>07</span>Get In Touch</h2>
+                    </div><!-- end Section Title -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 contact-form">
+                            <div class="widget">
+                                <form method="post" id="contactform">
+                                    <div class="input-style">
+                                        <div>
+                                            <input class="form-control" type="text" id="name" name="name" placeholder="Name" v-model="form.name">
+                                        </div>
+                                        <div>
+                                            <input class="form-control" type="email" id="email" name="email" placeholder="E-Mail" v-model="form.email">
+                                        </div>
+                                    </div>
+                                    <div class="text-style">
+                                        <textarea class="form-control" name="message" id="message" placeholder="Message" v-model="form.message"></textarea>
+                                    </div>
+                                    <input type="submit" id="submit" class="btn btn-info" name="submit" value="Send Message" v-on:click="send">
+                                    <div class="submit-result">
+                                        <p id="success">Your Message has been sent!</p>
+                                        <p id="error">Something went wrong, go back and try again!</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 contact-info">
+                            <div class="widget">
+                                <ul>
+                                    <li>
+                                        <h3><span class="icon_pin" aria-hidden="true"></span> Address</h3>
+                                        <p>{{ address }}</p>
+                                    </li>
+                                    <li>
+                                        <h3><span class="icon_phone" aria-hidden="true"></span> Phone</h3>
+                                        <p>{{ phone }}</p>
+                                    </li>
+                                    <li>
+                                        <h3><span class="icon_mail" aria-hidden="true"></span> Email</h3>
+                                        <p>{{ email }}</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end Inner row -->
+                    <!-- Google Maps -->
+                    <div class="google-maps">
+                        <iframe :src="google_maps_url" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <!-- end Google Maps -->
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- end Contact section -->

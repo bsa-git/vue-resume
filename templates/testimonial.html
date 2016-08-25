@@ -1,0 +1,33 @@
+<!-- Testimonial section -->
+<section id="testimonial">
+    <div class="testimonial-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 testimonialWrapper">
+                    <!-- Section Title -->
+                    <div class="section-title">
+                        <h2><span>06</span>Testimonial</h2>
+                    </div><!-- end Section Title -->
+                    <div class="testimonial-box">
+                        <div id="testimonialSlider" class="owl-carousel">
+                            
+                            <div class="testimonial" v-for="testimonial in testimonials">
+                                <div class="testimonial_content">
+                                    <div class="testimonial_content_inner">
+                                        <p>{{ testimonial.content }}</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial_author clearfix">
+                                    <img alt="" :src="testimonial.image" class="testimonial_photo">
+                                    <h3 class="testimonial_name">{{ testimonial.name }}</h3>
+                                    <div class="testimonial_position">{{ testimonial.position }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- end Testimonial section -->

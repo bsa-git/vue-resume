@@ -1,0 +1,48 @@
+<!-- Portfolio section -->
+<section id="portfolio">
+    <div class="portfolio-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 portfolioWrapper">
+                    <!-- Section Title -->
+                    <div class="section-title">
+                        <h2 class="pull-left"><span>03</span>Portfolio</h2>
+                        <div class="portfolio-filter pull-right">
+                            <ul>
+                                <li class="btn btn-default filter active" data-filter="{{ item.dataFilter }}" v-for="item in filters">{{ item.title }}</li>
+                            </ul>
+                        </div>
+                    </div><!-- end Section Title -->
+                    <div class="row">
+                        <div id="mix-container">
+                            <!-- Images -->
+                            <div class="col-xs-12 col-sm-4 mix category-{{ item.category_number }}" v-for="item in portfolio">
+                                <div class="imageWrapper">
+                                    <a class="lightbox" href="#popup-{{ $index + 1 }}">
+                                        <img :src="item.image" alt=""><!-- Image source  -->
+                                        <div class="imageHover">
+                                            <div>
+                                                <h3>{{ item.title }}</h3>
+                                                <span>{{ item.category }}</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- popup content -->
+                                    <div id="popup-{{ $index + 1 }}" class="mfp-hide popup-box">
+                                        <img :src="item.image" alt=""><!-- Image source -->
+                                        <div>
+                                            <h3>{{ item.title }}</h3>
+                                            <p>{{ item.description }}</p>
+                                        </div>
+                                    </div>
+                                    <!-- end popup content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end Inner row -->
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- end Portfolio section -->

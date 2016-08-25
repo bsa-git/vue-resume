@@ -1,0 +1,31 @@
+<!-- Blog section -->
+<section id="blog">
+    <div class="blog-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 blogWrapper">
+                    <!-- Section Title -->
+                    <div class="section-title">
+                        <h2><span>05</span>Blog Posts</h2>
+                    </div><!-- end Section Title -->
+                    <!-- Blog Posts -->
+                    <div class="blog-post row">
+                        <div class="col-sm-4" v-for="post in posts">
+                            <div class="blog-img">
+                                <img :src="post.image" alt="">
+                                <span class="card-title post-ver-date"><span class="icon_calendar" aria-hidden="true"></span> {{ post.date }}</span>
+                            </div>
+                            <div class="blog-dis">
+                                <h3>{{ post.title }}</h3>
+                                <p>{{ post.text }}</p>
+                                <a class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Blog posts -->
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- end Blog section -->

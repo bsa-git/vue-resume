@@ -1,0 +1,27 @@
+<!-- Services section -->
+<section id="services">
+    <div class="services-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 servicesWrapper">
+                    <!-- Section Title -->
+                    <div class="section-title">
+                        <h2><span>02</span>Services</h2>
+                    </div><!-- end Section Title -->
+                    <!-- Service boxs -->
+                    <div class="service-box"  v-for="item in services">
+                        <div>
+                            <i class="icon {{ item.icon }}}"></i>
+                        </div>
+                        <div>
+                            <h3>{{ item.name }}</h3>
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </div>
+                    <!-- end Service boxs -->
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- end Services section -->

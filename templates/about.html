@@ -1,0 +1,38 @@
+<!-- About section -->
+<section id="about">
+    <div class="about-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 aboutWrapper">
+                    <!-- Section Title -->
+                    <div class="nav-extra hidden-xs">
+                        <!-- Button Contact Modal -->
+                        <a data-target="#callmeModal" data-toggle="modal" href="#" class="btn btn-default">
+                            <span aria-hidden="true" class="icon_phone"></span>
+                        </a>
+                        <!-- Button 'Hire me' -->
+                        <a href="#contact" class="btn btn-info">Hire me now</a>
+                    </div>
+                    <div class="section-title">
+                        <h2><span>01</span>About me</h2>
+                    </div><!-- end Section Title -->
+                    <h1>Hello, I am <strong>{{ fullName }}</strong> <br><span class="bg-color">{{ mySpeciality }}</span></h1>
+                    <p>{{ briefDescriptionSpeciality }}</p>
+
+                    <div class="skills">
+                        <!-- Skill -->
+                        <div class="skill-outer" v-for="item in skills">
+                            <h4>{{ item.skill }}<span>{{ item.percent }}%</span></h4>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="{{ item.percent }}" aria-valuemin="0" aria-valuemax="100" :style="{width: item.percent + '%'};">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Skill -->
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- end About section -->

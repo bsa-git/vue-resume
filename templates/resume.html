@@ -1,0 +1,28 @@
+<!-- Resume section -->
+<section id="resume">
+    <div class="resume-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 resumeWrapper">
+                    <!-- Section Title -->
+                    <div class="section-title">
+                        <h2><span>04</span>Resume</h2>
+                    </div><!-- end Section Title -->
+                    
+                    <!-- Resume box 1 -->
+                    <div class="resume-box" v-for="item in resume">
+                        <div>
+                            <i class="{{ item.icon }}"></i>
+                        </div>
+                        <div>
+                            <h3>{{ item.name }}</h3>
+                            <span>{{ item.work_period }}</span>
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</section>
+<!-- end Resume section -->

@@ -31,9 +31,9 @@ Available on [jsdelivr](http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js) or
 [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js) 
 (takes some time to sync so the latest version might not be available yet).
 
-Also available on [npmcdn](https://npmcdn.com/vue/dist/vue.min.js), 
+Also available on [unpkg](https://unpkg.com/vue/dist/vue.min.js), 
 which will reflect the latest version as soon as it is published to npm. 
-You can also browse the source of the npm package at [npmcdn.com/vue/](https://npmcdn.com/vue/).
+You can also browse the source of the npm package at [unpkg.com/vue/](https://unpkg.com/vue/).
 
 ## Overview
 

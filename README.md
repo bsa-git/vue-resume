@@ -19,7 +19,7 @@ It can process HTML templates to generate Web application views that be composed
 2. Configure the web server so that the entry point was `index.html`.
 3. Access your project url with web browser (eg. http://localhost/vue-resume/index.html).
 
-## Overview
+## Overview Vue.js
 
 Main features of the Vue.js:
 

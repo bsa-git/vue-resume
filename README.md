@@ -15,7 +15,7 @@ It can process HTML templates to generate Web application views that be composed
 
 ### Deploying
 
-1. Clone [vue-resume](https://github.com/bsa-git/vue-resume) project with git.
+1. Clone or download [vue-resume](https://github.com/bsa-git/vue-resume) project with git.
 2. Configure the web server so that the entry point was `index.html`.
 3. Access your project url with web browser (eg. http://localhost/vue-resume/index.html).
 

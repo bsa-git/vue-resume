@@ -1,4 +1,3 @@
-<!-- About section -->
 <section id="about">
     <div class="about-background">
         <div class="container">
@@ -24,7 +23,7 @@
                         <div class="skill-outer" v-for="item in skills">
                             <h4>{{ item.skill }}<span>{{ item.percent }}%</span></h4>
                             <div class="progress progress-striped active">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="{{ item.percent }}" aria-valuemin="0" aria-valuemax="100" :style="{width: item.percent + '%'};">
+                                <div class="progress-bar" role="progressbar" :aria-valuenow="item.percent" aria-valuemin="0" aria-valuemax="100" :style="{ width: item.percent + '%'}">
                                 </div>
                             </div>
                         </div>
@@ -35,4 +34,3 @@
         </div><!-- end container -->
     </div>
 </section>
-<!-- end About section -->

@@ -42,10 +42,8 @@ Single-Page Applications.
 
 If you are an experienced frontend developer and want to know how Vue.js compares 
 to other libraries/frameworks, check out the [Comparison with Other Frameworks](http://vuejs.org/guide/comparison.html); 
-if you are more interested about how Vue.js approaches larger-scale applications, 
-check out the section on [Building Larger-Scale Applications](http://vuejs.org/guide/application.html).
 
-### [Learn more...](http://blog.evanyou.me/2015/10/25/vuejs-re-introduction/)
+### [Learn more...](https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8#.xzsmgdym1)
 
 ### Compatibility Note
 
@@ -57,10 +55,6 @@ that are un-shimmable in IE8. However Vue.js supports all [ECMAScript 5 complian
 Detailed release notes for each version are available on [GitHub](https://github.com/vuejs/vue/releases).
 
 ### CDN
-Available on [jsdelivr](http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js) or 
-[cdnjs](http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js) 
-(takes some time to sync so the latest version might not be available yet).
 
-Also available on [unpkg](https://unpkg.com/vue/dist/vue.min.js), 
-which will reflect the latest version as soon as it is published to npm. 
+Recommended: [unpkg](https://unpkg.com/vue/dist/vue.js), which will reflect the latest version as soon as it is published to npm. 
 You can also browse the source of the npm package at [unpkg.com/vue/](https://unpkg.com/vue/).

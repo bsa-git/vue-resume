@@ -49,9 +49,9 @@ Temporary Items
 # =========================
 # My Ignore
 # =========================
-
-/nbproject/*
-/.vscode/*
+.idea
+nbproject
+.vscode
 database.rules.json
 firebase.json
 .firebaserc

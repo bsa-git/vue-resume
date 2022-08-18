@@ -3,13 +3,12 @@ requirejs.config({
     paths: {
         css: "js/requirejs/css.min", //requirejs plugin for load css
         text: "js/requirejs/text", //requirejs plugin for load text
-        vue: 'https://unpkg.com/vue/dist/vue'
     },
     shim: {
     }
 });
 
-require(['vue',
+require([
     'text!templates/preloader.html',
     'text!templates/phone.html',
     'text!templates/socials.html',
@@ -23,7 +22,7 @@ require(['vue',
     'text!templates/contact.html',
     'text!templates/footer.html',
 ],
-    function (Vue, preloader, phone, socials, sidebar, about, services, portfolio, resume, blog, testimonial, contact, footer) {
+    function (preloader, phone, socials, sidebar, about, services, portfolio, resume, blog, testimonial, contact, footer) {
 
         var app = new Vue({
             el: '#app',
